@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/add_view_delete_installers.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/admin_dashboard.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/apply_installations.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/error.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/installer_dashboard.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/view_application_status.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/view_approved_installation_request.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/view_installations_subsidy_reports.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/view_residents.jsp=UTF-8

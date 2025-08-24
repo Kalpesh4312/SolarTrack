@@ -1,0 +1,128 @@
+@CHARSET "ISO-8859-1";
+
+/* Page Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #ecf0f1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 225px;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: #fff;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #1abc9c;
+}
+
+/* Main Content */
+.dashboard-content {
+    margin-left: 125px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.dashboard-content h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Installer Form */
+.installer-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.installer-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.installer-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.installer-form button {
+    padding: 12px;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.installer-form button:hover {
+    background-color: #d4ac0d;
+    color: white;
+}
+
+/* Back link */
+.dashboard-content p {
+    margin-top: 20px;
+}
+
+.dashboard-content p a {
+    text-decoration: none;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.dashboard-content p a:hover {
+    background-color: #d4ac0d;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

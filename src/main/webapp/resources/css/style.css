@@ -1,0 +1,206 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: fadeInBody 1s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease;
+}
+
+.login-form {
+    margin-bottom: 40px;
+    background-color: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.8s ease;
+}
+
+.login-form h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    padding: 10px 25px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Password toggle switch */
+.password-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #888;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #27ae60;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-30px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeInBody {
+    from {background-color: #000;}
+    to {background: linear-gradient(to right, #2c3e50, #3498db);}
+}
+
+.hidden-form {
+    display: none;
+}
+
+.toggle-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px 15px;
+    margin: 20px 0 10px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.toggle-section label:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f1c40f;
+}
+
+/* Form toggle buttons */
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.form-toggle button {
+    background-color: rgba(255,255,255,0.15);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-toggle button.active {
+    background-color: #f1c40f;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-toggle button:hover {
+    transform: scale(1.05);
+    background-color: #f39c12;
+    color: #000;
+}
+
+/* Hide form */
+.hidden-form {
+    display: none;
+}
+
+

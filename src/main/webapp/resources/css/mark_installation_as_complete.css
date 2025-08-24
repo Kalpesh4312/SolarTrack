@@ -1,0 +1,151 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1581091215367-4c6f54f3d2ef') no-repeat center center/cover;
+    background-color: #0d0d0d;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: #ffffff;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ffe1;
+}
+
+form input[type="text"],
+form input[type="radio"] {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #00ffe1;
+    border: none;
+    border-radius: 8px;
+    color: #0d0d0d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px #00ffe1;
+}
+
+form button:hover {
+    background-color: #00f2ff;
+    box-shadow: 0 0 18px #00f2ff;
+    transform: scale(1.05);
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+table th, table td {
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #e0f7fa;
+}
+
+table thead {
+    background: rgba(0, 255, 255, 0.15);
+}
+
+table tr:hover {
+    background: rgba(0, 255, 255, 0.07);
+}
+
+table button {
+    background-color: #00ffe1;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffe1;
+    transition: 0.3s ease;
+}
+
+table button:hover {
+    background-color: #00f2ff;
+    transform: scale(1.05);
+}
+
+table a {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-weight: 600;
+}
+
+h3 a {
+    display: inline-block;
+    background-color: rgba(0, 255, 255, 0.2);
+    color: #00ffe1;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 12px #00ffe1;
+    transition: all 0.3s ease;
+}
+
+h3 a:hover {
+    background-color: #00ffe1;
+    color: #0d0d0d;
+    box-shadow: 0 0 18px #00ffe1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

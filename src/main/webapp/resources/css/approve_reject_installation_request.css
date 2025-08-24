@@ -1,0 +1,139 @@
+@CHARSET "ISO-8859-1";
+
+/* Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #ecf0f1;
+}
+
+.sidebar {
+    width: 225px;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: #fff;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #1abc9c;
+}
+
+/* Main Content */
+.dashboard-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: 100%;
+    animation: fadeIn 0.6s ease;
+}
+
+.dashboard-content h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #f1c40f;
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+/* Buttons for Approve / Reject */
+button {
+    margin-right: 10px;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+button.approve {
+    background-color: #27ae60;
+}
+
+button.approve:hover {
+    background-color: #219150;
+}
+
+button.reject {
+    background-color: #e74c3c;
+}
+
+button.reject:hover {
+    background-color: #c0392b;
+}
+
+/* Return Link */
+h3 {
+    margin-top: 40px;
+}
+
+h3 a {
+    text-decoration: none;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+h3 a:hover {
+    background-color: #d4ac0d;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
